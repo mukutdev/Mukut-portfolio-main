@@ -61,10 +61,13 @@ tabs.forEach(tab =>{
             tabContent.classList.remove('qualification__active')
         })
         target.classList.add('qualification__active')
+
+        tabs.forEach(tab =>{
+            tab.classList.remove('qualification__active')
     })
     tab.classList.add('qualification__active')
 })      
-
+})
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services__modal'),
       modalBtns  = document.querySelectorAll('.services-button'),
